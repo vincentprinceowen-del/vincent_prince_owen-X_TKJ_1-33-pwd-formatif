@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(193, 228, 194);
+}
+
+#hero {
+    display: flex;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 640px;
+    padding: 30px;
+    background-color: rgba(87, 139, 91, 0.836);
+    border-radius: 30px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.hero-content h1,
+.hero-content p {
+    animation-name: slide-up;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(40px);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateY(8px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#hero .hero-content a {
+    background-color: #29e13e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
