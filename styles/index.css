@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(193, 228, 194);
+}
+
+header {
+    text-align: center;
+    background-color: #6a9b55;
+    color: white;
+    padding: 30px;
+}
+
+#components h2,
+#pages h2 {
+    color: #3e7558;
+    font-size: 28px;
+}
+
+main {
+    padding: 20px;
+}
+
+main a {
+    color: #004cff;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: #6a9b55;
+    color: white;
+    padding: 15px;
+}
